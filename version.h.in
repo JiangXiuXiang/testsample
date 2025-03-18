@@ -13,6 +13,10 @@ constexpr const char* commit_message = R"DELIMITER(
 
 constexpr const char* build_time="@BUILD_TIMESTAMP@";
 
+const std::string LastGitMommit{"123"};
+const std::string GitBranch{"123"};
+const std::string GitMsg{"123"};
+
 }  // namespace scrubber_slam
 
 #endif
