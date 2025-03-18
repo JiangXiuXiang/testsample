@@ -1,0 +1,18 @@
+#ifndef SCRUBBER_VERSION_H
+#define SCRUBBER_VERSION_H
+
+/// scrubber_slam 的 git信息，编译时间。version.h文件在编译时自动生成，不需要提交到git
+namespace scrubber_slam {
+
+constexpr const char* git_commit="@GIT_COMMIT_HASH@";
+constexpr const char* git_branch="@GIT_BRANCH_NAME@";
+
+constexpr const char* commit_message = R"DELIMITER(
+ @GIT_COMMIT_MESSAGE_ESCAPED@
+ )DELIMITER";
+
+constexpr const char* build_time="@BUILD_TIMESTAMP@";
+
+}  // namespace scrubber_slam
+
+#endif
